@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.png">
+    <title>Pure home real estate</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <!-- CSS only -->
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header class="pb-5">
+      <div class="p-3 text-white" style="background-color:#a7c23d;">
+        <div class="flexMain">
+          <div class="flex1">
+            <div>purehomerealestate@gmail.com</div>
+          </div>
+          <div class="flex2">
+
+          </div>
+          <div class="flex1 text-end">
+            <div><i class="fa-brands fa-whatsapp"> - +971582902264</i>
+            </i>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAACACAMAAADzok/sAAAAIVBMVEX/AAAAcy////8AAABVonRUVFTAHAz/Pz/AAADVKB3VFRVVusOnAAAAsklEQVR4nO3PyQ2AMBAEsHCGpP+CqQH2gUbYHbi1mnPJVuz7fx0o8vf39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f3z+bv7+/v/87Ys1X/fc3m7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++fzd/f39/f3/+5eWSr/q8tm7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/fzZ/f39/f/8//m8wasZBHv/7pwAAAABJRU5ErkJggg==" style="width: 2rem;height:2rem" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menuHolder" class="pt-1 ">
+        <div role="navigation" class="sticky-top border-bottom border-top" id="mainNavigation">
+          <div class="flexMain">
+            <div class="flex2">
+              <button class="whiteLink siteLink" style="border-right:1px solid #eaeaea;background-color: #a7c23d;" onclick="menuToggle()"><i class="fas fa-bars me-2"></i> MENU</button>
+              
+            </div>
+            <div class="flex3 text-center p-3 bg-gray-2"  style="font-style: oblique;"id="siteBrand">
+              <a href="" class="logo"><img src="assets/images/logo.png" style="height:4rem"></a>
+              <div></div>
+              PURE HOME REAL ESTATE
+                       </div>
+      
+            <div class="flex2 text-end d-block d-md-none">
+              <button class="whiteLink siteLink"><i class="fas fa-search"></i></button>
+            </div>
+      
+            <div class="flex2 text-end d-none d-md-block">
+            </div>
+          </div>
+        </div>
+      
+        <div id="menuDrawer" class="bg-secondary">
+          <div class="p-4 border-bottom">
+            <div class='row'>
+              <div class="col">
+                <select class="noStyle">
+                  <option value="english">English</option>
+                  <option value="spanish">Spanish</option>
+                  <option value="french">French</option>
+                  <option value="italian">Italian</option>
+                  <option value="hebrew">Hebrew</option>
+                </select>
+              </div>
+              <div class="col text-end ">
+                <i class="fas fa-times" role="btn" onclick="menuToggle()"></i>
+              </div>
+            </div>
+          </div>
+            <a href="#" class="nav-menu-item"><i class="fas fa-home me-3"></i>Buy</a>
+            <a href="#" class="nav-menu-item"><i class="fa-solid fa-water me-3"></i>Rent</a>
+            <a href="#" class="nav-menu-item"><i class="fas fa-wrench me-3"></i>Communities</a>
+            <a href="#" class="nav-menu-item"><i class="fas fa-file-alt me-3"></i>OffPlan Projects</a>
+            <a href="#" class="nav-menu-item"><i class="fa-solid fa-water me-3"></i>Landlords</a>
+            <a href="#" class="nav-menu-item"><i class="fas fa-wrench me-3"></i>More</a>
+            <a href="#" class="nav-menu-item"><i class="fas fa-wrench me-3"></i>Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <section class="pt-3 pb-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary">BUY</button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+            </div>
+            
+            <div class="col-md-2">
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary">RENT</button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-md-2">
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary">COMMUNITIES</button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-md-2">
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary">PROJECTS</button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+              </div>
+              
+              <div class="col-md-2">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary">LANDLORDS</button>
+                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                </div>
+  
+              <div class="col-md-2">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary" >MORE</button>
+                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"  data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+  
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+    </header>
+
+    <section class="bg-light pt-5 pb-5 mt-5 text-white" style="margin-top: 50rem;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3></h3>
+
+          </div>
+          <div class="col-md-1">
+            <h2></h2>
+          </div>
+          <div class="col-md-4">
+            <h3></h3>
+          </div>
+          <div class="col-md-1">
+            <h2></h2>
+          </div>
+          <div class="col-md-3">
+            <h3></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-4">
+      <div class="container col-md-12 text-center pt-3">
+        <h2>Visit Us Now !!!</h2>
+      </div>
+    </section>
+
+
+
+    <section class="pt-3 mt-5 text-center"  style="background-color:#a7c23d" >
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-2 text-center">
+              
+              <p><a href="" style="text-decoration:none;color:black;">Property Sales</a></p>
+  
+            </div>
+            <div class="col-md-1">
+              <h4>|</h4>
+            </div>
+            <div class="col-md-2 text-center">
+              <p ><a href="" style="text-decoration:none;color:black;">Property Rental</a></p>
+            </div>
+            <div class="col-md-1">
+              <h4>|</h4>
+            </div>
+            <div class="col-md-2 text-center">
+              <p ><a href="" style="text-decoration:none;color:black;">Property Management</a></p>
+            </div>
+            <div class="col-md-1">
+              <h4>|</h4>
+            </div>
+            <div class="col-md-2 text-center">
+              <p><a href="" style="text-decoration:none;color:black;">Handover Services</a></p>
+            </div>
+            <div class="col-md-1 ">
+              <h4>|</h4>
+          </div>
+        </div>
+      </section>
+    
+<section class="pt-5">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/yas3.jpg"style="width:100%;height:50rem" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/aldar.jpg" style="width:100%;height:50rem"class="d-block w-100" alt="...">
+      </div>
+     
+    </div>
+  </div>
+
+</section>
+<section class="pt-4 bg-light text-center">
+  <div class="container">
+    <div class="row ">
+      
+      <div class="col-md-3 pt-3"style="border:solid ;background-color:#a7c23d ">
+               <h3><i class="fa-solid fa-magnifying-glass-location"></i><br>
+           Community Search 
+            <p>**Slice your interest into 3 interest-free installments</p>
+          
+
+      </div>
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-4 pt-3"style="border:solid;background-color:#a7c23d">
+          <h3><i class="fa-solid fa-clipboard-list"></i><br>
+              List your Property</h3> 
+      </div>
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-3 pt-3"style="border:solid;background-color:#a7c23d">
+          <h3><i class="fa-solid fa-vr-cardboard"></i><br>Virtual Tours
+            </h3> 
+            <P><i>**Every 1AED= 1PT</i></P>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="text-center pt-5 pb-5">
+  <div class="container col-md-12 text-center text-white p-2 bg-secondary">
+  <h3 style="color:white">LET'S BUILD A LEGACY</h3>
+  <p style="color:white"><i>"Helping Hundreds Of People Move Home Every Year In Abu Dhabi."</i></p>
+
+  </div>
+  <hr>
+</section>
+
+
+<section class="pt=5">
+  <div class="container">
+    <div class="row col-md-12 pt-5 pb-5 text-center">
+      <h3>Abu Dhabi Communities</h3>
+    </div>
+    <div class="row"> 
+      <div class="col-md-3">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/reem1.jpg"style="width:100%;height:30rem" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/reem2.jpg" style="width:100%;height:30rem"class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/reem3.jpg"style="width:100%;height:30rem" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <h3 class=" text-center" style="background-color: #a7c23d;">Al Reem</h3>
+    </div>
+    <div class="col-md-3">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/saadiyat1.jpg"style="width:100%;height:30rem" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/saadiyat2.jpg" style="width:100%;height:30rem"class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/saadiyat3.jpg"style="width:100%;height:30rem" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <h3 class="text-center"style="background-color: #a7c23d;">Saadiyat Island</h3>
+    </div>
+    <div class="col-md-3">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/yas.jpg"style="width:100%;height:30rem" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/yas1.jpg" style="width:100%;height:30rem"class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/yas2.jpg"style="width:100%;height:30rem" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <h3 class="text-center"style="background-color: #a7c23d;">Yas Island</h3>
+    </div>
+    <div class="col-md-3">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/al raha1.jpg"style="width:100%;height:30rem" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/al raha2.jpg" style="width:100%;height:30rem"class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/al raha3.jpg"style="width:100%;height:30rem" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <h3 class="text-center"style="background-color: #a7c23d;">Al raha beach</h3>
+    </div>
+    </div>
+  </div>
+</section>
+<section class="pt-5">
+
+</section>
+
+<section class="pt-5">
+  <div class="container">
+    <div class="row text-center">
+      <h2>Featured Projects</h2>
+      <div class="col-md-4 text-center">  
+      <img src="assets/images/capital plaza.jpg" class="img-fluid" style="width:100%;height:30rem"alt="">
+
+      <h2><i class="fa-duotone fa-star-sharp"></i>Capital plaza</h2>
+      <h3 class=""style="color:red">AED 88000 per annum</h3><button class="btn btn-danger">25% off | save AED100</button>
+      <p>Tax included
+        </p>
+        <p>
+          *Size 2000sqft
+        </p>
+        <hr>
+        <button class="btn" style="width:100%;height:auto; margin: top 2rem; background-color: #a7c23d;">Buy/Rent</button>
+      </div>
+      <div class="col-md-4 text-center">  
+        <img src="assets/images/ethihad towers.jpg" class="img-fluid" style="width:100%;height: 30rem;"alt="">
+  
+        <h2><i class="fa-duotone fa-star-sharp"></i>Ethihad Tower</h2>
+        <h3 class=""style="color:red">AED 288000 per annum</h3><button class="btn btn-danger">25% off | save AED100</button>
+        <p>Tax included
+          </p>
+          <p>
+            *Size 5000sqft
+          </p>
+          <hr>
+          <button class="btn" style="width:100%;height:auto; margin: top 2rem; background-color: #a7c23d;">Buy/Rent</button>
+        </div>
+        <div class="col-md-4 text-center">  
+          <img src="assets/images/khalidiya.jpg" class="img-fluid" style="width:100%;height:30rem"alt="">
+    
+          <h2><i class="fa-duotone fa-star-sharp"></i>Al khalidiya</h2>
+          <h3 class=""style="color:red">AED 188000 per annum</h3><button class="btn btn-danger">25% off | save AED100</button>
+          <p>Tax included
+            </p>
+            <p>
+              *Size 2000sqft
+            </p>
+            <hr>
+            <button class="btn" style="width:100%;height:auto; margin: top 2rem; background-color: #a7c23d;">Buy/Rent</button>
+          </div>
+    </div>
+  </div>
+</section>
+<section class="w3l-gallery pb-5" id="gallery">
+        <div class="container py-md-5 py-4">
+            <div class="title-heading-w3 text-center mb-sm-5 mb-4">
+                <h2 class="title-small mb-1">Hot Properties For Sale</h2>
+                <h3 class="title-style"></h3>
+            </div>
+            <div class="row" style="background-color:#a7c23d">
+                <div class="col-lg-4 col-md-6 item">
+                    <a href="assets/images/al raha1.jpg" data-lightbox="example-set" data-title="Al- Raha"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" style="width:20rem;height: 30rem;"src="assets/images/al raha1.jpg" alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <img class="card-img-bottom d-block" style="width:20rem;height: 30rem;"src="assets/images/al raha2.jpg" alt="Card image cap">
+                            
+
+                        </span>
+                    </a>
+                    <h1 class="">Al Raha</h1>
+                </div>
+                <div class="col-lg-4 col-md-6 item mt-md-0 mt-4">
+                    <a href="assets/images/yas.jpg" data-lightbox="example-set" data-title="Yas Island"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="assets/images/yas.jpg" style="width:20rem;height: 30rem;"alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <img class="card-img-bottom d-block" style="width:20rem;height: 30rem;"src="assets/images/yas1.jpg" alt="Card image cap">
+
+                        </span>
+                    </a>
+                    <h1 class="">Yas Island</h1>
+                </div>
+
+                <div class="col-lg-4 col-md-6 item mt-lg-0 mt-4">
+                    <a href="assets/images/saadiyat1.jpg" data-lightbox="example-set" data-title="saadiyat1"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="assets/images/saadiyat1.jpg" style="width:20rem;height: 30rem;"alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <img class="card-img-bottom d-block" style="width:20rem;height: 30rem;"src="assets/images/saadiyat3.jpg" alt="Card image cap">
+
+                        </span>
+                    </a>
+                    <h1 class="">Saadiyat Island</h1>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="w3l-testimonials py-5" id="testimonials">
+
+        <div class="container py-md-5 py-4 bg-secondary">
+            <div class="row text-center">
+                <h2>Featured Developers</h2> 
+            </div>
+            <div class="row bg-secondary">
+                
+                <div class="col-md-12 ">
+                    <div class="row bg-secondary">
+                        <div class="col-md-10 mx-auto" style="background-color:#a7c23d">
+                            <div class="owl-two owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="slider-info mt-lg-4 mt-3">
+                                        <div class="message">
+                                            <h3>ALDAR</h3>
+                                            <div class="name mt-4 mb-4">
+                                                <p>Aldar Properties is a leading real estate developer in Abu Dhabi and one founded in 2004 by Christopher Sims, the first CEO of the company, and listed to Abu Dhabi market in 2005.</p>
+                                            </div>
+                                        </div>
+                                        <div class="img-circle">
+                                            <img src="assets/images/aldar.jpg"style="width:60rem;height: 30rem;" class="img-fluid radius-image" alt="client">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                  <div class="slider-info mt-lg-4 mt-3">
+                                      <div class="message">
+                                          <h3>IMKAN</h3>
+                                          <div class="name mt-4 mb-4">
+                                             <p>IMKAN’S residential, retail, hospitality and commercial projects all have something in common. They aspire to stimulate immediate surroundings and enrich the lives of the people that interact them.</p>
+                                          </div>
+                                      </div>
+                                      <div class="img-circle">
+                                          <img src="assets/images/imkan.jpg"style="width:60rem;height: 30rem;" class="img-fluid radius-image" alt="client">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item">
+                                <div class="slider-info mt-lg-4 mt-3">
+                                    <div class="message">
+                                        <h3>REPORTAGE</h3>
+                                        <div class="name mt-4 mb-4">
+                                            <p>Reportage properties is a reliable company created by experts in the field of construction, which creates unique projects in Abu Dhabi, ideal for investment for everyone, regardless of the size of the budget.</p>
+                                        </div>
+                                    </div>
+                                    <div class="img-circle">
+                                        <img src="assets/images/reportage.jpg"style="width:60rem;height: 30rem;" class="img-fluid radius-image" alt="client">
+                                    </div>
+                                </div>
+                            </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <h3>VIDEOS</h3>
+            <div class="col-md-3">
+              <iframe style="width:20rem;height:20rem;" src="https://www.youtube.com/embed/GBaBi9RUoSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-1 p1">
+              <h1></h1>
+            </div>
+            <div class="col-md-3">
+              <iframe style="width:20rem;height:20rem;" src="https://www.youtube.com/embed/Cjok1OC3kN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+            <div class="col-md-1 p1">
+              <h1></h1>
+            </div>
+
+            <div class="col-md-3">
+              <iframe style="width:20rem;height:20rem;"src="https://www.youtube.com/embed/s4mXfKgMmsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+    <section class="pb-4"> 
+        
+      <a href="https://api.whatsapp.com/send?phone=971582902264" style="display:inline-block; padding:16px; border-radius: 8rem; background-color: #25D366; color: #fff; text-decoration: none; font-family: sans-serif; font-size: 16px;" >
+        <i class="fa-brands fa-whatsapp"></i></a>
+    
+    </section>
+    <!-- footer -->
+    <footer class="footer-w3ls text-center py-5 pt-5" style="background-color:#a7c23d">
+        <div class="container pt-4">
+            <div class="row">
+           <div class="col-md-3 text-center " >
+               <h4 class="">Pure Home Real Estate</h4>
+               <p class="">- " we make your dream designs"</p>
+           </div>
+           <div class="col-md-3  pl-5">
+            <h4 class="">Quick Links</h4>
+            <p class="" ><a href="index2.html" style="text-decoration:none;color:black">Home</p></a>
+            <p class=""><a href="" style="text-decoration:none;color: black;">About Us</p></a>
+            <p class=""><a href="contact.html" style="text-decoration:none;color: black;">Contact Us</p></a>
+            <p class=""><a href="" style="text-decoration:none;color: black;">Privacy Policy</p></a>
+            <p class=""><a href="" style="text-decoration:none;color: black;">Terms and Conditions</p></a>
+
+        </div>
+        <div class="col-md-3">
+            <h4 class="">Get in Touch</h4>
+            <p class="" >help@purehomerealestate.com</p></a>
+        </div>
+        <div class="col-md-3">
+               <button class="btn btn-danger">Be Our Partner</button>
+        </div>
+    </div>
+  </div>
+
+            <!-- copyright -->
+            
+            </footer>
+    <footer1 class="bg-secondary text-center">
+      <div class="row ">
+        <div class="col-md-12">
+          <p class="copy-right-w3  mt-5 p-2">© 2022 Official Page. All rights reserved | Design by
+            <a href="https://purehome-re.ae/" target="_blank"> Pure home realestate</a>
+        </p>
+
+        </div>
+
+      </div>
+
+    </footer1>
+    <!-- //footer -->
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- lightbox -->
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+    <!-- lightbox -->
+
+    <!-- testimonials owlcarousel -->
+    <script src="assets/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-two').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    480: {
+                        items: 1,
+                        nav: false
+                    },
+                    667: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for Testimonials-->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="assets/js/theme-change.js"></script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!-- bootstrap -->
+   
+
+    
+    <script src="/assets/js/bootstrap.min.js"></script>
+    
+    <script src="/assets/js/index.js"></script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/62791a5db0d10b6f3e714eef/1g2kgtvuh';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+    
+</body>
+</html>
